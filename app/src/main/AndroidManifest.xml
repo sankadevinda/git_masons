@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodDonationlSystems">
         <activity
+            android:name=".hospitalmanagement"
+            android:exported="true" />
+        <activity
             android:name=".activity_register_blood_receiver"
             android:exported="true" />
         <activity
