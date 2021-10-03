@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLogin"
+    android:background="@drawable/dev65"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="smile BLOOD"
+android:gravity="center"
+android:textSize="50sp"
+android:textStyle="bold"
+android:textColor="#FFC300"></TextView>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="300dp"
+android:layout_marginBottom="20dp"
+android:background="@android:color/white"
+android:weightSum="2">
+
+
+<ImageView
+    android:id="@+id/imageView3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    app:srcCompat="@drawable/blood" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="80dp"
+android:paddingLeft="20dp"
+android:paddingRight="10dp">
+
+<TextView
+    android:id="@+id/UL_TV_username"
+    android:layout_width="110dp"
+    android:layout_height="42dp"
+    android:text="@string/user_login_username"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="344dp" />
+
+<EditText
+    android:id="@+id/UL_ET_username"
+    android:layout_width="285dp"
+    android:layout_height="match_parent"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="Enter Email"
+    android:textColorHint="@android:color/white"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="150dp"
+    tools:layout_editor_absoluteY="333dp" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="80dp"
+android:paddingLeft="20dp"
+android:paddingRight="10dp"
+    >
+
+<TextView
+    android:id="@+id/UL_TV_password"
+    android:layout_width="110dp"
+    android:layout_height="29dp"
+    android:text="@string/user_login_password"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="414dp" />
+
+<EditText
+    android:id="@+id/UL_ET_password"
+    android:layout_width="293dp"
+    android:layout_height="match_parent"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="@string/user_login_ET_password"
+    android:textColorHint="@android:color/white"
+    android:textSize="18sp"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="150dp"
+    tools:layout_editor_absoluteY="405dp" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingTop="50dp">
+
+<Button
+    android:id="@+id/UL_B_login"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:text="@string/user_login_button"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="150dp"
+    tools:layout_editor_absoluteY="516dp" />
+
+<Button
+    android:id="@+id/UL_B_Register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="RECEIVER" />
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingLeft="150dp"
+android:paddingTop="20dp"
+android:paddingBottom="20dp">
+
+<Button
+
+    android:id="@+id/age_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="AGE"
+    android:textSize="20dp"></Button>
+
+</LinearLayout>
+
+    </LinearLayout>
