@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RequestBlood"
+    android:background="@drawable/bac11">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:layout_marginLeft="100dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MAKE"
+                android:textColor="@android:color/white"
+                android:textSize="70sp"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LIFE"
+                android:textColor="@android:color/white"
+                android:textSize="70sp"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BETTER"
+                android:textColor="@android:color/white"
+                android:textSize="70sp"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+
+        android:weightSum="2"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/RB_Receiver_Login_Btn"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:background="@drawable/kau11"
+            android:text="Login AS A RECEIVER" />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="50dp"></Space>
+
+        <Button
+            android:id="@+id/RB_Donor_Login_Btn"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@drawable/sand1"
+            android:layout_weight="1"
+
+            android:text="Login AS A DONOR" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/hos_1"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@drawable/osh1"
+            android:text="hospital"></Button>
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="50dp"></Space>
+
+        <Button
+            android:id="@+id/camp_2"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@drawable/cam1"
+            android:text="hospital"></Button>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
