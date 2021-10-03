@@ -22,7 +22,7 @@ import java.util.Date;
 public class CreateCamp extends AppCompatActivity {
     EditText name, date, location;
     Button createCamp,campcal;
-    //Camp camp =new Camp();
+    Camp camp =new Camp();
     DatabaseReference dbRef;
     int i=0;
 
@@ -63,11 +63,11 @@ public class CreateCamp extends AppCompatActivity {
                     }else if (TextUtils.isEmpty(location.getText().toString())) {
                         Toast.makeText(CreateCamp.this, "Enter Location", Toast.LENGTH_SHORT).show();
                     }else {
-                       // camp.setName(name.getText().toString().trim());
-                        //camp.setDate( date.getText().toString());
-                      //  camp.setLocation(location.getText().toString().trim());
+                       camp.setName(name.getText().toString().trim());
+                        camp.setDate( date.getText().toString());
+                        camp.setLocation(location.getText().toString().trim());
 
-                       // dbRef.push().setValue(camp);
+                        dbRef.push().setValue(camp);
                         Toast.makeText(getApplicationContext(),"Registration Successful", Toast.LENGTH_LONG).show();
                         loadCampList();
                     }
