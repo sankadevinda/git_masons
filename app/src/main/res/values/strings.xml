@@ -1,3 +1,99 @@
 <resources>
     <string name="app_name">BloodDonationlSystems</string>
+    //User Login Strings
+    <string name="user_login_username">Username</string>
+    <string name="user_login_password">Password</string>
+
+    <string name="user_login_ET_username">Enter Username</string>
+    <string name="user_login_ET_password">Enter Password</string>
+
+    <string name="user_login_button">LOGIN</string>
+    <string name="user_register_button">REGISTER</string>
+
+    //Donor Strings
+
+    <string name="donor_profile_name">Name :</string>
+    <string name="donor_profile_national_id">National Id :</string>
+    <string name="donor_profile_city">City :</string>
+    <string name="donor_profile_address">Address :</string>
+    <string name="donor_profile_email">Email :</string>
+    <string name="donor_profile_phone_number">Phone Number :</string>
+    <string name="donor_profile_dob">Date of Birth :</string>
+    <string name="donor_profile_blood_type">Blood Type :</string>
+    <string name="donor_profile_gender">Gender :</string>
+    <string name="donor_profile_male">Male</string>
+    <string name="donor_profile_female">Female</string>
+    <string-array name="donor_profile_gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="donor_profile_blood_type_array">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string name="donor_profile_update_button">UPDATE</string>
+    <string name="donor_profile_delete_button">DELETE</string>
+    <string name="donor_profile_register_button">REGISTER</string>
+
+    <string name="donor_profile_register_heading">REGISTER AS A DONOR</string>
+    <string name="donor_profile_update_heading">UPDATE DONOR</string>
+
+    <string name="donor_profile_ET_address">Enter Address</string>
+    <string name="donor_profile_ET_national_id">Enter National id</string>
+    <string name="donor_profile_ET_name">Enter Name</string>
+    <string name="donor_profile_ET_dob">Enter DOB</string>
+    <string name="donor_profile_ET_email">Enter Email</string>
+    <string name="donor_profile_ET_phone_number">Enter Phone Number</string>
+    <string name="donor_profile_ET_city">Enter City</string>
+
+
+    //Receiver Strings
+    <string name="receiver_profile_name">Name :</string>
+    <string name="receiver_profile_national_id">National Id :</string>
+    <string name="receiver_profile_city">City :</string>
+    <string name="receiver_profile_address">Address :</string>
+    <string name="receiver_profile_email">Email :</string>
+    <string name="receiver_profile_phone_number">Phone Number :</string>
+    <string name="receiver_profile_dob">Date of Birth :</string>
+    <string name="receiver_profile_blood_type">Blood Type :</string>
+    <string name="receiver_profile_gender">Gender :</string>
+    <string name="receiver_profile_male">Male</string>
+    <string name="receiver_profile_female">Female</string>
+    <string-array name="receiver_profile_gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="receiver_profile_blood_type_array">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string name="receiver_profile_update_button">UPDATE</string>
+    <string name="receiver_profile_delete_button">DELETE</string>
+    <string name="receiver_profile_register_button">REGISTER</string>
+    <string name="receiver_profile_request_blood_button">REQUEST BLOOD</string>
+
+    <string name="receiver_profile_register_heading">REGISTER AS A RECEIVER</string>
+    <string name="receiver_profile_update_heading">UPDATE RECEIVER</string>
+
+    <string name="receiver_profile_ET_address">Enter Address</string>
+    <string name="receiver_profile_ET_national_id">Enter National id</string>
+    <string name="receiver_profile_ET_name">Enter Name</string>
+    <string name="receiver_profile_ET_dob">Enter DOB</string>
+    <string name="receiver_profile_ET_email">Enter Email</string>
+    <string name="receiver_profile_ET_phone_number">Enter Phone Number</string>
+    <string name="receiver_profile_ET_city">Enter City</string>
 </resources>
