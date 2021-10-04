@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodDonationlSystems">
         <activity
+            android:name=".CampList"
+            android:exported="true" />
+        <activity
             android:name=".CreateCamp"
             android:exported="true" />
         <activity
