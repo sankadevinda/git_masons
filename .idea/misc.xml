@@ -3,14 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BloodDonationlSystems/app/src/main/res/layout/activity_availability_list_source.xml" value="0.13020833333333334" />
         <entry key="..\:/BloodDonationlSystems/app/src/main/res/layout/activity_donor_login.xml" value="0.11614583333333334" />
         <entry key="..\:/BloodDonationlSystems/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/BloodDonationlSystems/app/src/main/res/layout/activity_register_blood_donor.xml" value="0.22395833333333334" />
+        <entry key="..\:/BloodDonationlSystems/app/src/main/res/layout/activity_register_blood_receiver.xml" value="0.13020833333333334" />
         <entry key="..\:/BloodDonationlSystems/app/src/main/res/layout/activity_request_blood.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/floders/git_masons/app/src/main/res/layout/activity_register_blood_receiver.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/floders/git_masons/app/src/main/res/layout/activity_request_blood.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/floders/git_masons/app/src/main/res/layout/activity_user_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/git_masons/app/src/main/res/layout/activity_availability_list_source.xml" value="0.25416666666666665" />
+        <entry key="..\:/git_masons/app/src/main/res/layout/activity_avilabilityofblood.xml" value="0.25416666666666665" />
+        <entry key="..\:/git_masons/app/src/main/res/layout/activity_hospitalmanagement.xml" value="0.13020833333333334" />
+        <entry key="..\:/git_masons/app/src/main/res/layout/activity_updateavailability.xml" value="0.24010416666666667" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
