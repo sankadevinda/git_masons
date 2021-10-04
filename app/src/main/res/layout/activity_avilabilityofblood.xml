@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@drawable/dev100">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aa0e1f">
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="100dp"
+                android:text="Add New Hospital"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_hpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/AB_ET_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter Hospital Name"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/DR_TV_A_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select A"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxAPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="A+"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxANeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A-"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select B"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxBPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="B+"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBNeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B-"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_AB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select AB"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxABPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="AB+"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxABNeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AB-"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select O"
+                android:textColor="@android:color/white"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxOPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="O+"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxONeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0-"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City :"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/AB_ET_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter City"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/donor_profile_phone_number"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/AB_ET_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/donor_profile_ET_phone_number"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/AB_B_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="post"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/vol_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="volum calculate"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView >
+
+
+
