@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Avilabilityofblood extends AppCompatActivity {
+public class availabilityofblood extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_avilabilityofblood);
+        setContentView(R.layout.activity_availabilityofblood);
     }
 }
