@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodDonationlSystems">
         <activity
+            android:name=".volumblood"
+            android:exported="true" />
+        <activity
             android:name=".agecalculation"
             android:exported="true" />
         <activity

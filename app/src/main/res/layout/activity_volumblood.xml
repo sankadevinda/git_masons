@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/san22"
+    tools:context=".volumblood">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Blood Volum "
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp"
+            android:paddingLeft="50dp">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="157dp"
+                android:layout_height="55dp"
+                android:text="weight"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="148dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="157dp"
+                android:layout_height="55dp"
+                android:text="Height"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="136dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <EditText
+                android:id="@+id/et_weight"
+                android:layout_width="165dp"
+                android:layout_height="52dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Enter Weight"
+                android:textColor="@android:color/white"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/white"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <EditText
+                android:id="@+id/et_height"
+                android:layout_width="165dp"
+                android:layout_height="52dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint=" Enter height"
+                android:textColor="@android:color/white"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/white"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="211dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingLeft="50dp">
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="60dp"
+                android:layout_height="26dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Select"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="339dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp">
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="257dp"
+                android:layout_height="98dp"
+                tools:layout_editor_absoluteX="77dp"
+                tools:layout_editor_absoluteY="393dp">
+
+                <RadioButton
+                    android:id="@+id/rd_btn_P"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Men blood volum"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rd_btn_S"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Women blood volum"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingLeft="110dp"
+            android:paddingBottom="20dp">
+            <Button
+                android:id="@+id/btn_calculate"
+                android:layout_width="131dp"
+                android:layout_height="48dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="Convert"
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="601dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="50dp">
+
+            <TextView
+                android:id="@+id/tv_answer"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:hint="Show the Value"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="131dp"
+                tools:layout_editor_absoluteY="691dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
