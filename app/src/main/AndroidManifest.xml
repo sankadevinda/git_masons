@@ -10,19 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodDonationlSystems">
         <activity
-            android:name=".campcalculation"
+            android:name=".agecalculation"
             android:exported="true" />
         <activity
-            android:name=".UpdateCamp"
+            android:name=".DonorProfile"
             android:exported="true" />
         <activity
-            android:name=".CampList"
+            android:name=".UpdateBloodDonor"
             android:exported="true" />
         <activity
-            android:name=".CreateCamp"
-            android:exported="true" />
-        <activity
-            android:name=".UserLogin"
+            android:name=".RegisterBloodDonor"
             android:exported="true" />
         <activity
             android:name=".DonorLogin"
