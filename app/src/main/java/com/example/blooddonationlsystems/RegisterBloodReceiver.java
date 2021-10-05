@@ -1,5 +1,6 @@
 package com.example.blooddonationlsystems;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-class RegisterBloodReceiver extends AppCompatActivity {
+public class RegisterBloodReceiver extends AppCompatActivity {
     EditText National_Id, Name, DOB, Email, Phone, Address, City, Password;
     RadioButton Male, Female;
     Spinner Blood_Type;
