@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateBloodReceiver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DonorProfile"
+        android:background="@drawable/dev100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="#aa0e1f"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_register_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:text="@string/receiver_profile_update_heading"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:layout_marginLeft="100dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_national_id"
+                    android:layout_width="112dp"
+                    android:layout_height="28dp"
+                    android:text="@string/receiver_profile_national_id"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/RU_ET_national_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="@string/receiver_profile_ET_national_id"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_name"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:text="@string/receiver_profile_name"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/RU_ET_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/receiver_profile_ET_name"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_gender"
+                    android:layout_width="102dp"
+                    android:layout_height="31dp"
+                    android:text="@string/receiver_profile_gender"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <RadioGroup
+                    android:layout_width="193dp"
+                    android:layout_height="33dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" >
+
+
+                    <RadioButton
+                        android:id="@+id/RU_RB_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/RU_RB_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_blood_type"
+                    android:layout_width="122dp"
+                    android:layout_height="33dp"
+                    android:text="@string/receiver_profile_blood_type"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:id="@+id/RU_spinner_blood_type"
+                    android:layout_width="199dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/receiver_profile_blood_type_array"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_dob"
+                    android:layout_width="136dp"
+                    android:layout_height="31dp"
+                    android:text="@string/receiver_profile_dob"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/RU_ET_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/receiver_profile_ET_dob"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_email"
+                    android:layout_width="92dp"
+                    android:layout_height="26dp"
+                    android:text="@string/receiver_profile_email"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/RU_ET_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="@string/receiver_profile_ET_email"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_phone"
+                    android:layout_width="160dp"
+                    android:layout_height="28dp"
+                    android:text="@string/receiver_profile_phone_number"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/RU_ET_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/receiver_profile_ET_phone_number"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_address"
+                    android:layout_width="88dp"
+                    android:layout_height="28dp"
+                    android:text="@string/receiver_profile_address"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/RU_ET_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/receiver_profile_ET_address"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_city"
+                    android:layout_width="83dp"
+                    android:layout_height="29dp"
+                    android:text="@string/receiver_profile_city"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/RU_ET_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/receiver_profile_ET_city"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/RU_TV_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/RU_ET_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Enter Password"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/RU_B_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/receiver_profile_update_button"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
