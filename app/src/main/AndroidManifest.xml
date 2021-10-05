@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodDonationlSystems">
         <activity
+            android:name=".campcalculation"
+            android:exported="true" />
+        <activity
             android:name=".UpdateCamp"
             android:exported="true" />
         <activity
@@ -18,7 +21,6 @@
         <activity
             android:name=".CreateCamp"
             android:exported="true" />
-      
         <activity
             android:name=".UserLogin"
             android:exported="true" />
