@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateavailability"
+    android:background="@drawable/dev100">
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3"
+            android:background="#aa0e1f">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:text="Update Availability"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="100dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_hpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Name"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/UA_ET_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Hospital Name"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_A_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select A"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxAPosU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="A+"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxANegU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A-"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select B"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxBPosU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="B+"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBNegU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B-"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_AB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select AB"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxABPosU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="AB+"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxABNegU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AB-"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select O"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxOPosU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="O+"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxONegU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O-"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:id="@+id/UA_ET_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter City"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donor_profile_phone_number"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/UA_ET_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/donor_profile_ET_phone_number"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/UA_B_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/receiver_profile_update_button"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView >
