@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateBloodDonor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DonorProfile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/DR_TV_register_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donor_profile_update_heading"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                android:layout_marginLeft="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_national_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_national_id"
+                    android:textColor="#050505"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/DU_ET_national_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:labelFor="@string/donor_profile_ET_national_id"
+                    android:textColor="#777777"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_name"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/DU_ET_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/donor_profile_ET_name"
+                    android:textColor="#777777"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_gender"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <RadioGroup
+                    android:layout_width="196dp"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:id="@+id/DU_RB_male"
+                        android:layout_width="97dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donor_profile_male" />
+
+                    <RadioButton
+                        android:id="@+id/DU_RB_female"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donor_profile_female" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_blood_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_blood_type"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/DU_spinner_blood_type"
+                    android:layout_width="199dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/donor_profile_blood_type_array"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_dob"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/DU_ET_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="@string/donor_profile_ET_dob"
+                    android:textColor="#777777"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_email"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/DU_ET_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/donor_profile_ET_email"
+                    android:textColor="#777777"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_phone_number"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/DU_ET_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/donor_profile_ET_phone_number"
+                    android:textColor="#777777"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_address"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/DU_ET_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/donor_profile_ET_address"
+                    android:textColor="#777777"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_city"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/DU_ET_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/donor_profile_ET_city"
+                    android:textColor="#777777"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/DU_TV_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/DU_ET_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Enter Password"
+                    android:textColor="#777777"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/DU_B_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donor_profile_update_button"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

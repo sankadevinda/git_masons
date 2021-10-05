@@ -10,19 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodDonationlSystems">
         <activity
-            android:name=".updateavailability"
+            android:name=".agecalculation"
             android:exported="true" />
         <activity
-            android:name=".availabilityofblood"
+            android:name=".DonorProfile"
             android:exported="true" />
         <activity
-            android:name=".hospitalmanagement"
+            android:name=".UpdateBloodDonor"
             android:exported="true" />
         <activity
-            android:name=".activity_register_blood_receiver"
-            android:exported="true" />
-        <activity
-            android:name=".UserLogin"
+            android:name=".RegisterBloodDonor"
             android:exported="true" />
         <activity
             android:name=".DonorLogin"
